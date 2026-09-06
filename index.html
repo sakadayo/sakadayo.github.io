@@ -1,49 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dayodayo Web Site</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="main.js"></script>
-</head>
-<body>
-    <header>
-        <nav class="top-bar">
-            <a href="https://dayodayo-JP.github.io">
-                <image class="logo" href="none"/>
-                <h1>dayodayoホームページ</h1>
-            </a>
-        </nav>
-    </header>
-    <div class="body">
-        <aside class="side-bar">
-            <section>
-                <h1>目次</h1>
-                <nav class="index">
-                </nav>
-            </section>
-            <section>
-                <h1>最新記事</h1>
-                <nav class="latest">
-                </nav>
-            </section>
-            <section>
-                <h1>人気記事</h1>
-                <nav class="popular">
-                </nav>
-            </section>
-        </aside>
-        <main class="main">
-            <article id="article">
-                <h1>Loading...</h1>
-            </article>
-            <p>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br></p>
-        </main>
-    </div>
-    <footer>
-        <p>あ</p>
-    </footer>
-</body>
+    <head>
+        <base href="https://dayodayo-jp.github.io/index.html" target="_blank" />
+        <meta charset="utf-8" />
+        <meta name="application-name" content="dayodayo's official site" lang="ja" />
+        <meta name="author" content="dayodayo" />
+        <meta name="color-scheme" content="dark light" />
+        <meta name="description" content="ネット文化と歴史が好きな中学三年大阪生えんじにゃdayodayoのオフィシャルサイトです。アンオフィシャルサイトはできそうにもないけれど、オフィシャルサイトです。色々なブログであったり、ページを公開しています。" />
+        <meta name="keywords" content="dayodayo" />
+        <meta name="referrer" content="no-referrer /">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <!-- FOUC対策 -->
+        <style>
+            html body{
+                opacity:0.0;
+                pointer-events: none;
+            }
+            html[data-load="loaded"] body{
+                opacity:1.0;
+                transition:opacity 0.3s;
+            }
+        </style>
+        <script>
+            window.addEventListener("load", (()=>{
+            console.log("loaded")
+            document.querySelector("html").setAttribute("data-load" , "loaded")
+            }))
+        </script>
+    </head>
+    <body>
+    </body>
 </html>
